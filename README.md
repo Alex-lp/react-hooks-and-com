@@ -7,11 +7,11 @@
 ### 安装
 
 ```bash
-npm install react-components-hooks
+npm install react-hooks-and-com
 # 或
-yarn add react-components-hooks
+yarn add react-hooks-and-com
 # 或
-pnpm add react-components-hooks
+pnpm add react-hooks-and-com
 ```
 
 ### 使用组件
@@ -20,14 +20,13 @@ pnpm add react-components-hooks
 
 ```tsx
 // 组件功能将在后期添加更多组件时开放
-// import { Button } from 'react-components-hooks';
+// import { Button } from 'react-hooks-and-com';
 ```
 
 ### 使用 Hooks
 
 ```tsx
-import { useCounter, useDebounce, useLocalStorage } from 'react-components-hooks';
-
+import { useCounter, useDebounce, useLocalStorage } from 'react-hooks-and-com';
 function Counter() {
   const { count, increment, decrement, reset } = useCounter({
     initialValue: 0,
@@ -103,7 +102,7 @@ import {
   useLocalStorage, 
   useClickAway,
   useWatermark 
-} from 'react-components-hooks';
+} from 'react-hooks-and-com';
 
 function App() {
   // 计数器
@@ -164,7 +163,7 @@ function App() {
 ```bash
 # 克隆项目
 git clone <repository-url>
-cd react-components-hooks
+cd react-hooks-and-com
 
 # 安装依赖
 npm install

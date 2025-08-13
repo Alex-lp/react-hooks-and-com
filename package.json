@@ -1,5 +1,5 @@
 {
-  "name": "react-components-hooks",
+  "name": "react-hooks-and-com",
   "version": "0.1.0",
   "description": "一个现代化的 React 自定义 Hooks 库，提供 20+ 个实用的自定义 Hooks。使用 TypeScript 和 Tailwind CSS 构建，完全类型安全。",
   "main": "dist/index.js",
@@ -43,11 +43,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-components-hooks/react-components-hooks.git"
+    "url": "https://github.com/react-hooks-and-com/react-hooks-and-com.git"
   },
-  "homepage": "https://github.com/react-components-hooks/react-components-hooks#readme",
+  "homepage": "https://github.com/react-hooks-and-com/react-hooks-and-com#readme",
   "bugs": {
-    "url": "https://github.com/react-components-hooks/react-components-hooks/issues"
+    "url": "https://github.com/react-hooks-and-com/react-hooks-and-com/issues"
   },
   "peerDependencies": {
     "react": ">=18.0.0",

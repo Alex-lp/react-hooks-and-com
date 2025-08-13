@@ -66,11 +66,11 @@ export default function Home() {
               <h4 className="text-lg font-semibold text-gray-900 mb-3">安装</h4>
               <div className="bg-gray-900 text-green-400 p-4 rounded-lg overflow-x-auto">
                 <pre className="text-sm">
-{`npm install react-components-hooks
+{`npm install react-hooks-and-com
 # 或
-yarn add react-components-hooks
+yarn add react-hooks-and-com
 # 或
-pnpm add react-components-hooks`}
+pnpm add react-hooks-and-com`}
                 </pre>
               </div>
             </div>
@@ -83,7 +83,7 @@ pnpm add react-components-hooks`}
                 <h5 className="font-medium text-gray-900 mb-2">Hooks 使用</h5>
                 <div className="bg-gray-900 text-green-400 p-3 rounded overflow-x-auto">
                   <pre className="text-sm">
-{`import { useCounter, useDebounce, useLocalStorage } from 'react-components-hooks';
+{`import { useCounter, useDebounce, useLocalStorage } from 'react-hooks-and-com';
 
 function App() {
   // 计数器
