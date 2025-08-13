@@ -1,27 +1,78 @@
 {
   "name": "react-components-hooks",
   "version": "0.1.0",
-  "private": true,
+  "description": "一个现代化的 React 自定义 Hooks 库，提供 20+ 个实用的自定义 Hooks。使用 TypeScript 和 Tailwind CSS 构建，完全类型安全。",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build:lib": "rollup -c",
+    "prepublishOnly": "npm run build:lib"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "hooks",
+    "typescript",
+    "ui",
+    "custom-hooks",
+    "react-hooks",
+    "utility-hooks",
+    "state-management",
+    "performance",
+    "browser-api",
+    "interaction",
+    "watermark",
+    "fullscreen",
+    "clipboard",
+    "local-storage",
+    "debounce",
+    "throttle",
+    "polling",
+    "queue",
+    "event-bus"
+  ],
+  "author": "React Components & Hooks Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/react-components-hooks/react-components-hooks.git"
+  },
+  "homepage": "https://github.com/react-components-hooks/react-components-hooks#readme",
+  "bugs": {
+    "url": "https://github.com/react-components-hooks/react-components-hooks/issues"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "dependencies": {
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.4.6"
+    "next": "15.4.6",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@rollup/plugin-commonjs": "^25.0.8",
+    "@rollup/plugin-node-resolve": "^15.3.1",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.4.6",
-    "@eslint/eslintrc": "^3"
+    "rollup": "^4.46.2",
+    "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-esbuild": "^6.2.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

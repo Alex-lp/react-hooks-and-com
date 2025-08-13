@@ -1,0 +1,63 @@
+# Source files
+src/
+src/app/
+src/app/components/
+src/app/hooks/
+src/app/page.tsx
+src/app/layout.tsx
+src/app/globals.css
+
+# Next.js files
+.next/
+next.config.ts
+next-env.d.ts
+
+# Development files
+.eslintrc.json
+.eslintrc.js
+eslint.config.mjs
+postcss.config.mjs
+tailwind.config.ts
+tailwind.config.js
+
+# Build files
+out/
+
+# Keep dist for npm package
+# dist/
+
+# Development dependencies
+node_modules/
+
+# Git files
+.git/
+.gitignore
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+coverage/
+.nyc_output/
+
+# Misc
+*.tgz
+*.tar.gz 
