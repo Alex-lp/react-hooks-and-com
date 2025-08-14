@@ -2,7 +2,7 @@
 
 一个现代化的 React 自定义 Hooks 库，提供 20+ 个实用的自定义 Hooks。使用 TypeScript 和 Tailwind CSS 构建，完全类型安全。
 
-## �� 在线文档
+## 🌐 在线文档
 
 📖 **[查看完整文档](https://alex-lp.github.io/react-hooks-and-com/)**
 
@@ -37,7 +37,7 @@ function App() {
     <div>
       <div>计数: {count}</div>
       <button onClick={increment}>+</button>
-      <button onClick={increment}>-</button>
+      <button onClick={decrement}>-</button>
       
       <input 
         value={value} 
@@ -56,14 +56,14 @@ function App() {
 
 ## ✨ 特性
 
-- �� **20+ 实用 Hooks** - 覆盖开发中的常见需求
+- 🎯 **20+ 实用 Hooks** - 覆盖开发中的常见需求
 - 🔒 **完全类型安全** - 使用 TypeScript 构建
 - 🎨 **现代化设计** - 支持 Tailwind CSS
-- �� **响应式支持** - 适配各种设备
-- �� **高性能** - 优化的实现，减少不必要的重渲染
-- �� **详细文档** - 每个 Hook 都有完整的使用示例
+- 📱 **响应式支持** - 适配各种设备
+- ⚡ **高性能** - 优化的实现，减少不必要的重渲染
+- 📚 **详细文档** - 每个 Hook 都有完整的使用示例
 
-## �� 可用 Hooks
+## 🛠️ 可用 Hooks
 
 ### 状态管理
 - `useCounter` - 计数器 Hook
@@ -98,13 +98,13 @@ function App() {
 ### 特殊功能
 - `useWatermark` - 水印添加 Hook
 
-## �� 相关链接
+## 🔗 相关链接
 
 - 📖 **[在线文档](https://alex-lp.github.io/react-hooks-and-com/)**
 - 🐛 **[问题反馈](https://github.com/Alex-lp/react-hooks-and-com/issues)**
 - 💡 **[功能建议](https://github.com/Alex-lp/react-hooks-and-com/discussions)**
 
-## �� 许可证
+## 📄 许可证
 
 MIT License - 详见 [LICENSE](LICENSE) 文件
 
@@ -116,7 +116,7 @@ MIT License - 详见 [LICENSE](LICENSE) 文件
 
 如有问题或建议，请通过以下方式联系：
 
-- �� 创建 [GitHub Issue](https://github.com/Alex-lp/react-hooks-and-com/issues)
+- 🐛 创建 [GitHub Issue](https://github.com/Alex-lp/react-hooks-and-com/issues)
 - 💬 参与 [GitHub Discussions](https://github.com/Alex-lp/react-hooks-and-com/discussions)
 
 ---
