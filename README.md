@@ -1,6 +1,10 @@
 # React Components & Hooks
 
-一个现代化的 React 组件和自定义 Hooks 库，使用 TypeScript 和 Tailwind CSS 构建。提供 20+ 个实用的自定义 Hooks 和可复用的 UI 组件。
+一个现代化的 React 自定义 Hooks 库，提供 20+ 个实用的自定义 Hooks。使用 TypeScript 和 Tailwind CSS 构建，完全类型安全。
+
+## �� 在线文档
+
+📖 **[查看完整文档](https://alex-lp.github.io/react-hooks-and-com/)**
 
 ## 🚀 快速开始
 
@@ -14,95 +18,10 @@ yarn add react-hooks-and-com
 pnpm add react-hooks-and-com
 ```
 
-### 使用组件
-
-> **注意**: 组件功能目前正在开发中，暂时只提供 Hooks 功能。
-
-```tsx
-// 组件功能将在后期添加更多组件时开放
-// import { Button } from 'react-hooks-and-com';
-```
-
-### 使用 Hooks
+### 使用示例
 
 ```tsx
 import { useCounter, useDebounce, useLocalStorage } from 'react-hooks-and-com';
-function Counter() {
-  const { count, increment, decrement, reset } = useCounter({
-    initialValue: 0,
-    min: 0,
-    max: 10,
-    step: 1
-  });
-
-  return (
-    <div>
-      <p>计数: {count}</p>
-      <button onClick={increment}>+</button>
-      <button onClick={decrement}>-</button>
-      <button onClick={reset}>重置</button>
-    </div>
-  );
-}
-```
-
-## 📦 包含内容
-
-### 组件 (Components)
-
-> **开发中**: 组件功能将在后期添加更多组件时开放
-- 目前专注于 Hooks 功能开发
-- 组件功能暂时关闭
-
-### Hooks (20+ 个实用 Hooks)
-
-#### 🎯 状态管理
-- **useCounter** - 计数器管理 hook
-- **useToggle** - 切换状态 hook
-- **usePrevious** - 获取前一个值
-- **useLocalStorage** - 本地存储管理
-
-#### ⚡ 性能优化
-- **useDebounce** - 防抖 hook
-- **useThrottle** - 节流 hook
-- **useUpdateEffect** - 更新时执行 effect
-
-#### 🌐 浏览器 API
-- **useWindowSize** - 窗口尺寸监听
-- **useFullscreen** - 全屏功能
-- **useClipboard** - 剪贴板操作
-
-#### 🖱️ 交互处理
-- **useClickAway** - 点击外部检测
-- **useInView** - 视口检测
-- **useHover** - 鼠标悬浮监听
-- **useMouse** - 鼠标位置监听
-- **useScrolling** - 滚动状态监听
-
-#### 🎨 UI 增强
-- **useElementSize** - 元素尺寸监听
-- **useWatermark** - 水印功能
-
-#### ⏰ 时间处理
-- **useTimeAgo** - 时间格式化
-- **usePolling** - 轮询功能
-
-#### 🔄 数据管理
-- **useQueue** - 队列数据结构
-- **useEventBus** - 事件总线
-
-## 📚 使用示例
-
-### 基础用法示例
-
-```tsx
-import { 
-  useCounter, 
-  useDebounce, 
-  useLocalStorage, 
-  useClickAway,
-  useWatermark 
-} from 'react-hooks-and-com';
 
 function App() {
   // 计数器
@@ -113,21 +32,12 @@ function App() {
   
   // 本地存储
   const { value: theme, setValue: setTheme } = useLocalStorage('theme', 'light');
-  
-  // 点击外部关闭
-  const ref = useClickAway({ onClickAway: () => console.log('点击外部') });
-  
-  // 水印
-  const { ref: watermarkRef } = useWatermark({ 
-    text: '机密文件', 
-    opacity: 0.3 
-  });
 
   return (
     <div>
       <div>计数: {count}</div>
       <button onClick={increment}>+</button>
-      <button onClick={decrement}>-</button>
+      <button onClick={increment}>-</button>
       
       <input 
         value={value} 
@@ -139,73 +49,76 @@ function App() {
       <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
         切换主题: {theme}
       </button>
-      
-      <div ref={watermarkRef} className="p-4 border">
-        <h1>重要文档</h1>
-        <p>这是需要添加水印保护的内容...</p>
-      </div>
     </div>
   );
 }
 ```
 
+## ✨ 特性
 
+- �� **20+ 实用 Hooks** - 覆盖开发中的常见需求
+- 🔒 **完全类型安全** - 使用 TypeScript 构建
+- 🎨 **现代化设计** - 支持 Tailwind CSS
+- �� **响应式支持** - 适配各种设备
+- �� **高性能** - 优化的实现，减少不必要的重渲染
+- �� **详细文档** - 每个 Hook 都有完整的使用示例
 
+## �� 可用 Hooks
 
+### 状态管理
+- `useCounter` - 计数器 Hook
+- `useToggle` - 布尔值切换 Hook
+- `useLocalStorage` - 本地存储 Hook
+- `usePrevious` - 获取前一个值 Hook
 
+### 性能优化
+- `useDebounce` - 防抖 Hook
+- `useThrottle` - 节流 Hook
+- `useUpdateEffect` - 更新时执行 Effect Hook
 
+### 浏览器 API
+- `useWindowSize` - 窗口尺寸 Hook
+- `useFullscreen` - 全屏控制 Hook
+- `useClipboard` - 剪贴板操作 Hook
+- `useElementSize` - 元素尺寸监听 Hook
 
+### 交互检测
+- `useClickAway` - 点击外部检测 Hook
+- `useInView` - 视口检测 Hook
+- `useHover` - 鼠标悬浮检测 Hook
+- `useMouse` - 鼠标位置监听 Hook
+- `useScrolling` - 滚动状态检测 Hook
 
-## 🛠️ 开发
+### 数据处理
+- `useQueue` - 队列管理 Hook
+- `usePolling` - 轮询 Hook
+- `useTimeAgo` - 时间格式化 Hook
+- `useEventBus` - 事件总线 Hook
 
-### 本地开发
+### 特殊功能
+- `useWatermark` - 水印添加 Hook
 
-```bash
-# 克隆项目
-git clone <repository-url>
-cd react-hooks-and-com
+## �� 相关链接
 
-# 安装依赖
-npm install
+- 📖 **[在线文档](https://alex-lp.github.io/react-hooks-and-com/)**
+- 🐛 **[问题反馈](https://github.com/Alex-lp/react-hooks-and-com/issues)**
+- 💡 **[功能建议](https://github.com/Alex-lp/react-hooks-and-com/discussions)**
 
-# 启动开发服务器
-npm run dev
-```
+## �� 许可证
 
-### 构建库
-
-```bash
-# 构建库文件
-npm run build:lib
-```
-
-### 发布到 npm
-
-```bash
-# 发布前会自动构建
-npm publish
-```
-
-## 📚 文档
-
-访问 [http://localhost:3000](http://localhost:3000) 查看完整的组件和 hooks 文档。
-
-## 🎨 技术栈
-
-- **React 19** - 最新的 React 版本
-- **TypeScript** - 完整的类型支持
-- **Tailwind CSS** - 现代化的 CSS 框架
-- **Next.js 15** - React 应用框架
-- **Rollup** - 库打包工具
-
-## 📄 许可证
-
-MIT License
+MIT License - 详见 [LICENSE](LICENSE) 文件
 
 ## 🤝 贡献
 
 欢迎提交 Issue 和 Pull Request！
 
-## 📞 支持
+## 📞 联系我们
 
-如果你有任何问题或建议，请创建 Issue 或联系维护者。
+如有问题或建议，请通过以下方式联系：
+
+- �� 创建 [GitHub Issue](https://github.com/Alex-lp/react-hooks-and-com/issues)
+- 💬 参与 [GitHub Discussions](https://github.com/Alex-lp/react-hooks-and-com/discussions)
+
+---
+
+⭐ 如果这个项目对你有帮助，请给我们一个 Star！
